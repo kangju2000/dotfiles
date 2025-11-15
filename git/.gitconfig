@@ -1,0 +1,19 @@
+[user]
+	name = kangju2000
+	email = kangju2000@gmail.com
+[push]
+	autoSetupRemote = true
+[core]
+    pager = delta
+[merge]
+    conflictstyle = zdiff3
+[branch]
+	sort = committerdate
+[rebase]
+	autoStash = true
+[tag]
+    sort = version:refname
+[diff]
+	algorithm = histogram
+[commit]
+	verbose = true

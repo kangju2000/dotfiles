@@ -1,0 +1,8 @@
+secrets/.secrets
+.secrets
+.company-env
+.DS_Store
+*.swp
+*.swo
+*~
+*.local
