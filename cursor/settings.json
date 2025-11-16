@@ -1,0 +1,262 @@
+{
+	"[dockercompose]": {
+		"editor.autoIndent": "advanced",
+		"editor.defaultFormatter": "redhat.vscode-yaml",
+		"editor.insertSpaces": true,
+		"editor.tabSize": 2
+	},
+	"[github-actions-workflow]": {
+		"editor.defaultFormatter": "redhat.vscode-yaml"
+	},
+	"[javascript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.formatOnSave": true
+	},
+	"[javascriptreact]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.formatOnSave": true
+	},
+	"[typescript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.formatOnSave": true
+	},
+	"[typescriptreact]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.formatOnSave": true
+	},
+	"better-comments.tags": [
+		{
+			"backgroundColor": "transparent",
+			"bold": false,
+			"color": "#FF2D00",
+			"italic": false,
+			"strikethrough": false,
+			"tag": "FIXME",
+			"underline": false
+		},
+		{
+			"backgroundColor": "transparent",
+			"bold": false,
+			"color": "#FF2D00",
+			"italic": false,
+			"strikethrough": false,
+			"tag": "!",
+			"underline": false
+		},
+		{
+			"backgroundColor": "transparent",
+			"bold": false,
+			"color": "#3498DB",
+			"italic": false,
+			"strikethrough": false,
+			"tag": "?",
+			"underline": false
+		},
+		{
+			"backgroundColor": "transparent",
+			"bold": false,
+			"color": "#474747",
+			"italic": false,
+			"strikethrough": true,
+			"tag": "//",
+			"underline": false
+		},
+		{
+			"backgroundColor": "transparent",
+			"bold": false,
+			"color": "#FF8C00",
+			"italic": false,
+			"strikethrough": false,
+			"tag": "todo",
+			"underline": false
+		},
+		{
+			"backgroundColor": "transparent",
+			"bold": false,
+			"color": "#FF8C00",
+			"italic": false,
+			"strikethrough": false,
+			"tag": "note",
+			"underline": false
+		},
+		{
+			"backgroundColor": "transparent",
+			"bold": false,
+			"color": "#98C379",
+			"italic": false,
+			"strikethrough": false,
+			"tag": "*",
+			"underline": false
+		}
+	],
+	"cSpell.userWords": [
+		"codesandbox",
+		"commaize",
+		"commitlint",
+		"Damoa",
+		"darkmode",
+		"deepmerge",
+		"deque",
+		"divs",
+		"easings",
+		"Estree",
+		"fieldset",
+		"gsap",
+		"iframe",
+		"inspectable",
+		"Kakao",
+		"kangju",
+		"listify",
+		"Millis",
+		"nuqs",
+		"Parens",
+		"Participations",
+		"Pressable",
+		"Pretendard",
+		"Pushable",
+		"rehype",
+		"Repomix",
+		"Sandpack",
+		"scenejs",
+		"separeted",
+		"tailwindcss",
+		"tanstack",
+		"tscompile",
+		"tsup",
+		"twind",
+		"typecheck",
+		"zustand"
+	],
+	"cursor.composer.shouldChimeAfterChatFinishes": true,
+	"custom-ui-style.font.sansSerif": "Jetbrains Mono, monospace",
+	"diffEditor.codeLens": true,
+	"diffEditor.ignoreTrimWhitespace": false,
+	"editor.accessibilitySupport": "off",
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": "explicit"
+	},
+	"editor.cursorBlinking": "smooth",
+	"editor.cursorSmoothCaretAnimation": "on",
+	"editor.cursorStyle": "block",
+	"editor.defaultFormatter": "biomejs.biome",
+	"editor.fontFamily": "'JetBrains Mono', 'D2Coding', Menlo, Monaco, 'Courier New', monospace",
+	"editor.formatOnPaste": true,
+	"editor.formatOnSave": true,
+	"editor.inlayHints.enabled": "offUnlessPressed",
+	"editor.inlayHints.fontFamily": "'JetBrains Mono', 'D2Coding', Menlo, Monaco, 'Courier New', monospace",
+	"editor.inlayHints.fontSize": 9,
+	"editor.inlineCompletionsAccessibilityVerbose": true,
+	"editor.smoothScrolling": true,
+	"editor.tabSize": 2,
+	"errorLens.decorations": {
+		"errorRange": {},
+		"hintRange": {},
+		"infoRange": {},
+		"warningRange": {}
+	},
+	"errorLens.gutterIconsEnabled": true,
+	"eslint.codeActionsOnSave.rules": null,
+	"explorer.compactFolders": false,
+	"explorer.confirmDelete": false,
+	"extensions.gallery.serviceUrl": "https://marketplace.visualstudio.com/_apis/public/gallery",
+	"files.autoSave": "onFocusChange",
+	"git-graph.repository.onlyFollowFirstParent": true,
+	"git-worktree-manager.terminalLocationInEditor": true,
+	"git.autofetch": true,
+	"git.confirmSync": false,
+	"git.enableSmartCommit": true,
+	"git.replaceTagsWhenPull": true,
+	"githubPullRequests.pullBranch": "never",
+	"gitlens.ai.model": "deepseek:deepseek-chat",
+	"gitlens.launchpad.indicator.enabled": false,
+	"gitlens.views.fileHistory.files.icon": "status",
+	"gitlens.views.showRelativeDateMarkers": false,
+	"indentRainbow.colorOnWhiteSpaceOnly": true,
+	"indentRainbow.colors": [
+		"rgba(255,255,64,0.07)",
+		"rgba(127,255,127,0.07)",
+		"rgba(255,127,255,0.07)",
+		"rgba(79,236,236,0.07)"
+	],
+	"javascript.inlayHints.parameterTypes.enabled": true,
+	"javascript.updateImportsOnFileMove.enabled": "always",
+	"leetcode.hint.configWebviewMarkdown": false,
+	"material-icon-theme.folders.theme": "classic",
+	"scm.alwaysShowRepositories": true,
+	"scm.defaultViewMode": "tree",
+	"scm.diffDecorationsGutterPattern": {
+		"added": true
+	},
+	"search.exclude": {
+		"**/node_modules": false
+	},
+	"search.useGlobalIgnoreFiles": true,
+	"security.workspace.trust.untrustedFiles": "open",
+	"terminal.external.osxExec": "Warp.app",
+	"terminal.integrated.defaultProfile.osx": "zsh",
+	"terminal.integrated.env.osx": {
+		"Q_NEW_SESSION": "1"
+	},
+	"terminal.integrated.fontFamily": "'Comic Mono', 'MesloLGS NF'",
+	"terminal.integrated.profiles.osx": {
+		"bash": {
+			"args": ["-l"],
+			"icon": "terminal-bash",
+			"path": "bash"
+		},
+		"fish": {
+			"args": ["-l"],
+			"path": "fish"
+		},
+		"pwsh": {
+			"icon": "terminal-powershell",
+			"path": "pwsh"
+		},
+		"tmux": {
+			"icon": "terminal-tmux",
+			"path": "tmux"
+		},
+		"zsh": {
+			"args": ["-l"],
+			"path": "/bin/zsh"
+		}
+	},
+	"terminal.integrated.scrollback": 700,
+	"terminal.integrated.smoothScrolling": true,
+	"typescript.enablePromptUseWorkspaceTsdk": true,
+	"typescript.inlayHints.enumMemberValues.enabled": true,
+	"typescript.inlayHints.functionLikeReturnTypes.enabled": true,
+	"typescript.inlayHints.parameterNames.enabled": "literals",
+	"typescript.inlayHints.parameterTypes.enabled": true,
+	"typescript.inlayHints.propertyDeclarationTypes.enabled": true,
+	"typescript.inlayHints.variableTypes.enabled": true,
+	"typescript.tsdk": "node_modules/typescript/lib",
+	"typescript.tsserver.experimental.useVsCodeWatcher": false,
+	"typescript.updateImportsOnFileMove.enabled": "always",
+	"window.zoomLevel": 0.35,
+	"workbench.colorTheme": "Plastic",
+	"workbench.editor.autoLockGroups": {
+		"mainThreadWebview-simpleBrowser.view": false
+	},
+	"workbench.editor.closeEmptyGroups": false,
+	"workbench.editor.preferHistoryBasedLanguageDetection": true,
+	"workbench.editorAssociations": {
+		"*.xlsx": "default"
+	},
+	"workbench.iconTheme": "material-icon-theme",
+	"workbench.layoutControl.enabled": false,
+	"workbench.list.smoothScrolling": true,
+	"workbench.panel.showLabels": false,
+	"workbench.productIconTheme": "material-product-icons",
+	"workbench.secondarySideBar.showLabels": false,
+	"workbench.startupEditor": "none",
+	"javascript.preferences.importModuleSpecifier": "non-relative",
+	"errorLens.enableOnDiffView": true,
+	"update.releaseTrack": "prerelease",
+	"cursor.enable_git_worktrees_setting": true,
+	"cursor.agent_layout_browser_beta_setting": true,
+	"gitlens.heatmap.locations": ["gutter", "overview"],
+	"diffEditor.experimental.showMoves": true,
+	"diffEditor.renderSideBySide": true,
+	"claudeCode.selectedModel": "default"
+}

@@ -1,0 +1,131 @@
+[
+	{
+		"key": "alt+space",
+		"command": "editor.action.triggerSuggest",
+		"when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible"
+	},
+	{
+		"key": "cmd+i",
+		"command": "-editor.action.triggerSuggest",
+		"when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible"
+	},
+	{
+		"key": "shift+cmd+z",
+		"command": "redo"
+	},
+	{
+		"key": "shift+cmd+z",
+		"command": "-redo"
+	},
+	{
+		"key": "alt+`",
+		"command": "workbench.action.terminal.new",
+		"when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
+	},
+	{
+		"key": "ctrl+shift+[Backquote]",
+		"command": "-workbench.action.terminal.new",
+		"when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
+	},
+	{
+		"key": "shift+f4",
+		"command": "-references-view.prev",
+		"when": "reference-list.hasResult && references-view.canNavigate"
+	},
+	{
+		"key": "shift+cmd+r",
+		"command": "workbench.action.reloadWindow",
+		"when": "isDevelopment"
+	},
+	{
+		"key": "cmd+r",
+		"command": "-workbench.action.reloadWindow",
+		"when": "isDevelopment"
+	},
+	{
+		"key": "alt+t",
+		"command": "workbench.action.terminal.sendSequence",
+		"args": { "text": "cd \"${fileDirname}\"\u000D" }
+	},
+	{
+		"key": "cmd+k cmd+z",
+		"command": "workbench.action.toggleZenMode"
+	},
+	{
+		"key": "cmd+k z",
+		"command": "-workbench.action.toggleZenMode"
+	},
+	{
+		"key": "shift+cmd+k",
+		"command": "-editor.action.deleteLines",
+		"when": "textInputFocus && !editorReadonly"
+	},
+	{
+		"key": "shift+cmd+1",
+		"command": "workbench.action.splitEditorToLeftGroup"
+	},
+	{
+		"key": "shift+cmd+2",
+		"command": "workbench.action.splitEditorToRightGroup"
+	},
+	{
+		"key": "shift+cmd+delete",
+		"command": "workbench.action.navigateBack",
+		"when": "canNavigateBack"
+	},
+	{
+		"key": "ctrl+-",
+		"command": "-workbench.action.navigateBack",
+		"when": "canNavigateBack"
+	},
+	{
+		"key": "shift+cmd+end",
+		"command": "workbench.action.navigateForward",
+		"when": "canNavigateForward"
+	},
+	{
+		"key": "ctrl+shift+-",
+		"command": "-workbench.action.navigateForward",
+		"when": "canNavigateForward"
+	},
+	{
+		"key": "ctrl+c",
+		"command": "git.checkout"
+	},
+	{
+		"key": "cmd+n",
+		"command": "explorer.newFile",
+		"when": "explorerViewletFocus"
+	},
+	{
+		"key": "cmd+shift+n",
+		"command": "explorer.newFolder",
+		"when": "explorerViewletFocus"
+	},
+	{
+		"key": "ctrl+f",
+		"command": "workbench.action.quickTextSearch"
+	},
+	{
+		"key": "cmd+w",
+		"command": "-workbench.action.closeWindow",
+		"when": "!editorIsOpen && !multipleEditorGroups"
+	},
+	{
+		"key": "shift+enter",
+		"command": "workbench.action.terminal.sendSequence",
+		"args": {
+			"text": "\u001b\n"
+		},
+		"when": "terminalFocus"
+	},
+	{
+		"key": "ctrl+shift+f",
+		"command": "search.action.openNewEditorToSide"
+	},
+	{
+		"key": "alt+cmd+k",
+		"command": "-keybindings.editor.recordSearchKeys",
+		"when": "inKeybindings && inKeybindingsSearch"
+	}
+]
