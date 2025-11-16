@@ -1,8 +1,10 @@
 # Development tools
 brew "gh"
+brew "fd"
 brew "git"
 brew "tree"
 brew "nvm"
+brew "ripgrep"
 brew "spaceship"
 
 # GUI Applications
@@ -10,3 +12,10 @@ cask "karabiner-elements"
 cask "raycast"
 cask "warp"
 cask "rectangle"
+cask "cursor"
+cask "firefox"
+cask "slack"
+cask "shottr"
+cask "alt-tab"
+cask "chatgpt"
+cask "jordanbaird-ice"
