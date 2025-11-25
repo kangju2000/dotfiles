@@ -1,0 +1,16 @@
+[
+	{
+		"context": "Workspace",
+		"bindings": {}
+	},
+	{
+		"context": "Editor && vim_mode == insert",
+		"bindings": {}
+	},
+	{
+		"context": "Editor",
+		"bindings": {
+			"alt-escape": "editor::ShowCompletions"
+		}
+	}
+]

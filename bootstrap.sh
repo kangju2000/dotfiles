@@ -34,7 +34,7 @@ if [[ "$OSTYPE" != "darwin"* ]]; then
 fi
 
 # Define available setup modules
-AVAILABLE_MODULES=("brew" "secrets" "zsh" "karabiner" "cursor" "claude" "macos")
+AVAILABLE_MODULES=("brew" "secrets" "zsh" "karabiner" "cursor" "claude" "zed" "macos")
 SELECTED_MODULES=()
 
 if [[ "$INTERACTIVE" == true ]]; then

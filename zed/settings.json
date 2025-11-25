@@ -1,0 +1,113 @@
+{
+	"agent": {
+		"always_allow_tool_actions": true,
+		"default_profile": "write",
+		"default_model": {
+			"provider": "zed.dev",
+			"model": "claude-sonnet-4-5"
+		},
+		"model_parameters": []
+	},
+	"git_panel": {
+		"sort_by_path": true,
+		"collapse_untracked_diff": false
+	},
+	"context_servers": {
+		"mcp-server-context7": {
+			"source": "extension",
+			"enabled": true,
+			"settings": {
+				"context7_api_key": ""
+			}
+		}
+	},
+	"icon_theme": "Catppuccin Latte",
+	"agent_buffer_font_size": 14.0,
+	"agent_ui_font_size": 14.0,
+	"ui_font_weight": 400.0,
+	"ui_font_family": "JetBrains Mono",
+	"terminal": {
+		"env": {
+			"Q_NEW_SESSION": "\"1\""
+		},
+		"font_family": "Comic Mono",
+		"font_fallbacks": ["MesloLGS NF"],
+		"max_scroll_history_lines": 700
+	},
+	"project_panel": {
+		"hide_hidden": false,
+		"auto_fold_dirs": false
+	},
+	"cursor_shape": "block",
+	"cursor_blink": true,
+	"autosave": "on_focus_change",
+	"buffer_font_fallbacks": [
+		"D2Coding",
+		"Menlo",
+		"Monaco",
+		"Courier New",
+		"monospace"
+	],
+	"buffer_font_family": "JetBrains Mono",
+	"auto_indent_on_paste": true,
+	"base_keymap": "Cursor",
+	"ui_font_size": 15.0,
+	"buffer_font_size": 15,
+	"theme": {
+		"mode": "system",
+		"light": "One Light",
+		"dark": "macOS Classic Dark"
+	},
+	"lsp": {
+		"biome": {
+			"settings": {
+				"config_path": "biome.json",
+				"require_config_file": true
+			}
+		}
+	},
+	"languages": {
+		"JavaScript": {
+			"formatter": { "language_server": { "name": "biome" } },
+			"code_actions_on_format": {
+				"source.fixAll.biome": true,
+				"source.organizeImports.biome": true
+			}
+		},
+		"TypeScript": {
+			"formatter": { "language_server": { "name": "biome" } },
+			"code_actions_on_format": {
+				"source.fixAll.biome": true,
+				"source.organizeImports.biome": true
+			}
+		},
+		"TSX": {
+			"formatter": { "language_server": { "name": "biome" } },
+			"code_actions_on_format": {
+				"source.fixAll.biome": true,
+				"source.organizeImports.biome": true
+			}
+		},
+		"JSON": {
+			"formatter": { "language_server": { "name": "biome" } },
+			"code_actions_on_format": {
+				"source.fixAll.biome": true,
+				"source.organizeImports.biome": true
+			}
+		},
+		"JSONC": {
+			"formatter": { "language_server": { "name": "biome" } },
+			"code_actions_on_format": {
+				"source.fixAll.biome": true,
+				"source.organizeImports.biome": true
+			}
+		},
+		"CSS": {
+			"formatter": { "language_server": { "name": "biome" } },
+			"code_actions_on_format": {
+				"source.fixAll.biome": true,
+				"source.organizeImports.biome": true
+			}
+		}
+	}
+}
