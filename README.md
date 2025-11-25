@@ -33,16 +33,6 @@ cd ~/dotfiles
 ./bootstrap.sh --all --update
 ```
 
-## Modules
-
-- **brew** - Homebrew and packages
-- **secrets** - Environment secrets
-- **zsh** - Oh My Zsh and plugins
-- **karabiner** - Keyboard customization
-- **cursor** - Cursor editor settings and extensions
-- **claude** - Claude Code CLI settings
-- **macos** - macOS system settings
-
 ## Post-Install
 
 ```bash
