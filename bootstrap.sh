@@ -34,14 +34,8 @@ if [[ "$OSTYPE" != "darwin"* ]]; then
   exit 1
 fi
 
-echo "📍 Detected OS: $OS_TYPE"
-
-# Define available setup modules based on OS
-if [[ "$OS_TYPE" == "macos" ]]; then
-  AVAILABLE_MODULES=("brew" "secrets" "zsh" "karabiner" "cursor" "claude" "zed" "macos")
-elif [[ "$OS_TYPE" == "wsl" ]]; then
-  AVAILABLE_MODULES=("secrets" "zsh" "cursor" "claude" "zed")
-fi
+# Define available setup modules
+AVAILABLE_MODULES=("brew" "secrets" "zsh" "karabiner" "cursor" "claude" "zed" "macos")
 SELECTED_MODULES=()
 
 if [[ "$INTERACTIVE" == true ]]; then
