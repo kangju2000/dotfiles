@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 
 UPDATE_MODE=${1:-false}
 
@@ -7,7 +7,7 @@ echo "🎨 Setting up Zsh..."
 # Install Oh My Zsh if not already installed
 if [ ! -d "$HOME/.oh-my-zsh" ]; then
   echo "🎨 Installing Oh My Zsh..."
-  sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+  sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 else
   echo "✅ Oh My Zsh already installed"
 fi
@@ -43,4 +43,21 @@ if [ "$UPDATE_MODE" = true ]; then
   if [ -d "$ZSH_CUSTOM/plugins/zsh-syntax-highlighting" ]; then
     cd "$ZSH_CUSTOM/plugins/zsh-syntax-highlighting" && git pull
   fi
+fi
+
+# Link .zshrc
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+ZSHRC_SOURCE="$SCRIPT_DIR/.zshrc"
+ZSHRC_TARGET="$HOME/.zshrc"
+
+if [ -L "$ZSHRC_TARGET" ]; then
+  echo "✅ .zshrc symlink already exists"
+elif [ -f "$ZSHRC_TARGET" ]; then
+  echo "⚠️  .zshrc already exists as a regular file. Backing up to .zshrc.backup"
+  mv "$ZSHRC_TARGET" "$ZSHRC_TARGET.backup"
+  ln -s "$ZSHRC_SOURCE" "$ZSHRC_TARGET"
+  echo "✅ .zshrc linked successfully"
+else
+  ln -s "$ZSHRC_SOURCE" "$ZSHRC_TARGET"
+  echo "✅ .zshrc linked successfully"
 fi

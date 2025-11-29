@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 
 DOTFILES_DIR="$(cd "$(dirname "$0")" && pwd)"
 
@@ -27,14 +27,21 @@ done
 
 echo "🚀 Starting dotfiles setup..."
 
-# Check if we're on macOS
+# Detect operating system - macOS only
 if [[ "$OSTYPE" != "darwin"* ]]; then
   echo "❌ This script is designed for macOS only."
+  echo "   Detected OSTYPE: $OSTYPE"
   exit 1
 fi
 
-# Define available setup modules
-AVAILABLE_MODULES=("brew" "secrets" "zsh" "karabiner" "cursor" "claude" "zed" "macos")
+echo "📍 Detected OS: $OS_TYPE"
+
+# Define available setup modules based on OS
+if [[ "$OS_TYPE" == "macos" ]]; then
+  AVAILABLE_MODULES=("brew" "secrets" "zsh" "karabiner" "cursor" "claude" "zed" "macos")
+elif [[ "$OS_TYPE" == "wsl" ]]; then
+  AVAILABLE_MODULES=("secrets" "zsh" "cursor" "claude" "zed")
+fi
 SELECTED_MODULES=()
 
 if [[ "$INTERACTIVE" == true ]]; then
@@ -43,8 +50,7 @@ if [[ "$INTERACTIVE" == true ]]; then
   echo ""
 
   for module in "${AVAILABLE_MODULES[@]}"; do
-    read -q "REPLY?Install $module? (y/n): "
-    echo ""
+    read -p "Install $module? (y/n): " REPLY
     if [[ "$REPLY" == "y" ]]; then
       SELECTED_MODULES+=("$module")
     fi
